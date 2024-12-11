@@ -122,4 +122,54 @@
   font-style: normal;
 }
 
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 *\
+
+/* NAVEBAR */
+
+@media screen and (max-width: 630px) {
+  /* MENU HAMBURGUER */ 
+  header nav#nav-esq{
+    justify-content: space-between;
+  }
+
+  header nav#nav-esq ul#icone-menu{
+    display: flex;
+  }
+
+  /* MENU */
+
+  header nav#nav-esq ul#menu-principal{
+    flex-direction: column;
+    width: 50%;
+    height: 85vh;
+    background-color: rgb(82, 113, 113);
+    padding-top: .9rem;
+    position: absolute;
+    top: 13.1rem;
+    right: 0;
+    z-index: 999;
+
+    /*display: none;*/
+
+  }
+
+  header nav#nav-esq ul#menu-principal li{
+    margin: .5rem;
+    margin-left: 1rem;
+
+  }
+
+  header nav#nav-esq ul#menu-principal li a{
+    font-size: 120%;
+  }
+}
+
+
+

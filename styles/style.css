@@ -195,15 +195,44 @@ header nav#nav-esq ul#menu-principal li{
   font-family: poppins;
 }
 
+/* Falta personalizar */
 header nav#nav-esq ul#menu-principal li a{
   text-decoration: none;
-  color: #FFF;
   font-size: 100%;
   padding-bottom: 10px;
+  transition: color 0.3s ease;
 
 }
 
+/* Falta personalizar */
 header nav#nav-esq ul#menu-principal li a:hover{
-  border-bottom:1px solid #FFF
+  color: #AAA;
+}
+
+/* BOTÃO ABRIR EMPRESA */
+.btn-empresa{
+  background-color: #FFF;
+  color: #0d0d0d;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: poppins;
+  font-weight: bold;
 
 }
+
+/* BOTÕES DO CABEÇALHO */
+.btn-menu{
+  color: #FFF;
+}
+
+/* ícone de dropdown */
+.seta_baixo-icon {
+  width: 10px; 
+  height: auto;
+  margin-left: 5px; 
+  vertical-align: middle; 
+}
+
+
+
