@@ -141,7 +141,7 @@
 header{
 font-family:inter;
 width: 100%;
-height: 95vh
+height: 210px;
 }
 
 /* NAVEBAR */
@@ -160,16 +160,17 @@ margin: 0;
 padding: 0;
 
 /*SOMBREAMENTO ABAIXO DA NEVABAR*/ 
+position: absolute;
 border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 box-shadow: 0px 0px 10px 12px rgba(0, 0, 0, 1);
-}
+z-index: 1;
+} 
 
 /*TRABALHAR NA LOGO*/
 #logo img {
 max-width: 100px;
 margin-bottom: 20px;
 }
-
 
 header nav#nav-esq div#logo{
 width: 144px;
@@ -211,6 +212,15 @@ margin-right: 57px;
 font-family: poppins;
 }
 
+/* AJUSTES PRA ESPAÇAMENTO ENTRE OS BOTOES*/
+nav#nav-esq ul{
+  list-style: none;
+  display: flex; 
+  gap: 20px; /* o gap é o espaçamento entro os botões */
+  padding: 0px;
+  margin: 0px;
+  }
+
 /* Falta personalizar */
 header nav#nav-esq ul#menu-principal li a{
 text-decoration: none;
@@ -238,7 +248,7 @@ font-weight: bold;
 }
 
 /* BOTÕES DO CABEÇALHO */
-.btn-menu{
+.btns-menu{
 color: #FFF;
 }
 
@@ -250,16 +260,108 @@ margin-left: 5px;
 vertical-align: middle; 
 }
 
+
+/* BODY */
 /* COLOQUEI O COLOR BODY PRA VER COMO FICARIA*/
 body {
 background-color: #0d0d0d;
 }
 
-/* FIZ ALGUNS AJUSTES PRA ESPAÇAMENTO ENTRE OS BOTOES*/
-nav#nav-esq ul{
-list-style: none;
-display: flex; /* flex box serve para organizar os itens dentro do container no site */
-gap: 20px; /* o gap é o espaçamento entro os botões */
-padding: 0px;
-margin: 0px;
+/* MAIN */
+/* Estrutura do corpo do site */
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
+
+.container-inferior{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box-esquerda{
+  background-color: #0c0c0c;
+  width: 600px;
+  height: 730px;
+  border: 1px, color #FFF;
+  padding: 275px 102px 188px 62px;
+  font-family: inter;
+  font-weight: bold;
+}
+
+main div.container div.box-esquerda .nome-empresa{
+  display: flex;
+  color:rgba(255, 255, 255, 0.5);
+  text-align: left;
+  padding: 10px 84px 2px 102px;
+
+}
+
+main div.container div.box-esquerda .slogan-empresa{
+  display: flex;
+  text-align: left;
+  padding: 3px 63px 10px 102px;
+  color:#FFF;
+
+}
+
+main div.container div.box-esquerda .missao-empresa{
+  display: flex;
+  text-align: left;
+  padding: 10px 84px 32px 102px;
+  color:#FFF;
+  font-weight:initial;
+
+}
+
+main div.container div.box-esquerda .btn-fale-conosco{
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  background-color: #FFF;
+  color: #0d0d0d;
+  padding: 10px 16px 11px 17px;
+  font-family: inter;
+  font-weight: bolder;
+  border-radius: 5px;
+
+}
+
+main div.container div.box-esquerda .btn-saiba-mais{
+  display: flex;
+  text-decoration: none;
+  background-color: #00000000;
+  border: 1px solid;
+  color: #FFF;
+  padding: 9px 16px 10px 17px;
+  font-family: inter;
+  font-weight: bolder;
+  border-radius: 5px;
+
+}
+
+main div.container div.box-esquerda div.btns{
+  justify-content: space-between;
+  display: flex;
+  padding: 0px 0px 32px 0px ;
+  height: 43px;
+  width: 353px;
+}
+
+
+.box-direita{
+  background-color: blue;
+  width: 600px;
+  height: 730px;
+  border: 1px, color #FFF;
+}
+
+.box1{
+  background-color: aqua;
+  width: 1200px;
+  height: 139px;
+}
+
