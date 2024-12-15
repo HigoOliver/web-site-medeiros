@@ -168,13 +168,15 @@ z-index: 1;
 /*TRABALHAR NA LOGO*/
 #logo img {
 max-width: 100px;
-margin-bottom: 20px;
 }
 
 header nav#nav-esq div#logo{
 width: 144px;
 height: 86px;
-margin-left: 57px;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
 header nav#nav-esq div#logo img{
@@ -259,15 +261,6 @@ margin-left: 5px;
 vertical-align: middle; 
 }
 
-.icon-saiba-saiba-mais{
-  position: relative;
-  top: 4px;
-  bottom: 4px;
-  width: 11px;
-  height: 11px;
-
-}
-
 /* BODY COLOR */
 body {
 background-color: #0d0d0d;
@@ -277,29 +270,43 @@ background-color: #0d0d0d;
 /* Estrutura do corpo do site */
 
 /* BACKGROUND ABSTRATO */
-main div.background-img{
-  background-position: center center;
-  position:fixed;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  width: 100%; 
-  height: 100%; 
-  background-image: url(../imagens/background-site.jpg);
-  background-repeat: no-repeat;
-  background-size:contain; 
-  z-index: -1;
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-/* CONTAINERS */
-.container{
+main .hero{
+  padding-top: 30px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 1200px; 
+  height: 870px;
+  position: relative;
+  box-shadow: 0px 4px 14.5px 8px #000000;
+}
+
+main .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../imagens/background-site.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+main .hero .content-hero{
+  display: flex;
   flex-direction: row;
 }
 
-.container-inferior{
+/* CONTAINERS */
+.container{
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -309,13 +316,12 @@ main div.background-img{
 .box-esquerda{
   width: 600px;
   height: 730px;
-  border: 1px, color #FFF;
   padding: 275px 102px 188px 62px;
   font-family: inter;
   font-weight: bold;
 }
 
-main div.container div.box-esquerda .nome-empresa{
+.box-esquerda .nome-empresa{
   display: flex;
   color:rgba(255, 255, 255, 0.5);
   text-align: left;
@@ -323,7 +329,7 @@ main div.container div.box-esquerda .nome-empresa{
 
 }
 
-main div.container div.box-esquerda .slogan-empresa{
+.box-esquerda .slogan-empresa{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -331,8 +337,7 @@ main div.container div.box-esquerda .slogan-empresa{
   color:#FFF;
 
 }
-
-main div.container div.box-esquerda .missao-empresa{
+.box-esquerda .missao-empresa{
   display: flex;
   text-align: left;
   padding: 10px 0px 32px 0px;
@@ -341,7 +346,7 @@ main div.container div.box-esquerda .missao-empresa{
   
 }
 
-main div.container div.box-esquerda .btn-fale-conosco{
+.box-esquerda .btn-fale-conosco{
   text-align: center;
   display: flex;
   text-decoration: none;
@@ -354,41 +359,110 @@ main div.container div.box-esquerda .btn-fale-conosco{
 
 }
 
-main div.container div.box-esquerda .btn-saiba-mais{
+.box-esquerda .btn-saiba-mais{
   display: flex;
   text-decoration: none;
-  background-color: #00000000;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   border: 1px solid;
   color: #FFF;
   padding: 9px 16px 10px 17px;
   font-family: inter;
   font-weight: 600;
   border-radius: 5px;
-  margin-left: 30px;
   gap: 10px;
 
 }
 
-main div.container div.box-esquerda div.btns{
+.box-esquerda .btn-saiba-mais img{
+  width: 11px;
+  height: 11px;
+}
+
+.box-esquerda div.btns{
   
   display: flex;
-  padding: 0px 0px 32px 0px ;
-  height: 43px;
-  width: 353px;
+  padding: 0px 0px 0px 0px ;
+  gap: 30px;
 }
 
 /* BOX DIREITA */
 .box-direita{
   width: 600px;
   height: 730px;
-  border: 1px, color #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.box-direita .img-container {
+  width: 362px;
+  height: 485px;
+  background-color: #7D7D7D;
+  border-radius: 5px;
+  position: relative;
+}
+
+.box-direita .img-container img{
+  width: 398px;
+  height: 596px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container-inferior{
+  height: 139px;
+  display: flex;
+  padding: 0px 103px 0px 34px;
+  align-items: center;
+}
 
 /* BOX INFERIOR */
 .box-inferior{
-  width: 1200px;
-  height: 139px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: inter;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 28px;
+  width: calc(355px + 28px);
+  height: 100px;
+  position: relative;
 }
+
+.box-inferior.first{
+  width: 285px;
+}
+
+.box-inferior::after{
+  content:"";
+  border-right: 1px solid #FFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+.box-inferior .poppins24{
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+.box-inferior .poppins28{
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+.box-inferior .poppins14{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+
 
 
