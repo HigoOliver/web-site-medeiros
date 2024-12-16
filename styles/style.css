@@ -463,6 +463,92 @@ main .hero .content-hero{
   font-weight: 500;
 }
 
+/* CONTAINER DO TIME DE PROFISSIONAIS */
+
+main .container-equipe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+  width: 1200px;
+  background-color: #2C2C2C;
+  margin: 0 auto;
+  position: relative;
+  
+}
+
+/* Títulos */
+main .container-equipe h3{
+  font-family: inter;
+  font-weight: 700;
+  color:#FFF;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  padding-left: 102px;
+}
+
+main .container-equipe h5{
+  font-family: inter;
+  font-weight: 300;
+  color: #FFF;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  padding-left: 102px;
+  margin-bottom: 33px;
+}
+
+/* LOGO */
+main .container-equipe .logo{
+  position: absolute;
+  top: 77px;
+  right: 120px;
+  width: 75px;
+  height: 58px;
+  opacity: 0.2;
+}
+
+/* BOX EQUIPE */
+/* DIMENSÕES DOS RETÂNGULOS */
+main .container-equipe .box-equipe{ 
+  width: 995px; 
+  height: 602px; 
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  position: relative;
+  gap: 20px; 
+  padding: 10px;
+
+  }
+
+  /* ESTILIZAÇÃO DOS RETANGULOS */
+main .container-equipe .box-equipe .retangulo {
+  width: 285px;
+  height: 210px;
+  background-color: #7D7D7D; 
+  border-radius: 5px;
+  position: relative;
+}
+
+main .container-equipe .box-equipe .retangulo .retangulo-interno{
+  width: 227px;
+  height: 114px;
+  border-radius: 5px;
+  background-color: #adadad; 
+  position: absolute;
+  top: 127px; 
+  left: 29px; 
+  right: 29px; 
+  bottom: 31px; 
+  opacity: 0.9;
+
+}
+
 
 
 
