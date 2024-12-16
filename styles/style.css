@@ -420,7 +420,6 @@ main .hero .content-hero{
   align-items: center;
   position: absolute;
   bottom: 20px;
-  
 
 }
 
@@ -470,7 +469,7 @@ main .hero .content-hero{
 
 /* CONTAINER DO TIME DE PROFISSIONAIS */
 
-main .container-equipe{
+.container-equipe{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -484,7 +483,7 @@ main .container-equipe{
 }
 
 /* Títulos */
-main .container-equipe h3{
+.container-equipe h3{
   font-family: inter;
   font-weight: 700;
   color:#FFF;
@@ -494,7 +493,7 @@ main .container-equipe h3{
   padding-left: 102px;
 }
 
-main .container-equipe h5{
+.container-equipe h5{
   font-family: inter;
   font-weight: 300;
   color: #FFF;
@@ -508,7 +507,7 @@ main .container-equipe h5{
 
 /* BOX EQUIPE */
 /* DIMENSÕES DOS RETÂNGULOS */
-main .container-equipe .box-equipe{ 
+.container-equipe .box-equipe{ 
   width: 995px; 
   height: 602px; 
   border-radius: 5px;
@@ -524,7 +523,7 @@ main .container-equipe .box-equipe{
   }
 
   /* ESTILIZAÇÃO DOS RETANGULOS */
-main .container-equipe .box-equipe .retangulo {
+.container-equipe .box-equipe .retangulo {
   width: 285px;
   height: 210px;
   background-color: #7D7D7D; 
@@ -532,7 +531,7 @@ main .container-equipe .box-equipe .retangulo {
   position: relative;
 }
 
-main .container-equipe .box-equipe .retangulo .retangulo-interno{
+.container-equipe .box-equipe .retangulo .retangulo-interno{
   width: 227px;
   height: 114px;
   border-radius: 5px;
