@@ -414,10 +414,12 @@ main .hero .content-hero{
 }
 
 .container-inferior{
-  height: 139px;
-  display: flex;
-  padding: 0px 103px 0px 34px;
-  align-items: center;
+    height: 139px;
+    display: flex;
+    padding: 0px 103px 0px 34px;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
 }
 
 /* BOX INFERIOR */
