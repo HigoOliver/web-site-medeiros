@@ -291,13 +291,13 @@ main .hero::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../imagens/background-site.jpg);
+  background-image: url(../imagens/background.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 main .hero .content-hero{
@@ -418,6 +418,10 @@ main .hero .content-hero{
   display: flex;
   padding: 0px 103px 0px 34px;
   align-items: center;
+  position: absolute;
+  bottom: 20px;
+  
+
 }
 
 /* BOX INFERIOR */
@@ -434,6 +438,7 @@ main .hero .content-hero{
   width: calc(355px + 28px);
   height: 100px;
   position: relative;
+  
 }
 
 .box-inferior.first{
@@ -500,15 +505,6 @@ main .container-equipe h5{
   margin-bottom: 33px;
 }
 
-/* LOGO */
-main .container-equipe .logo{
-  position: absolute;
-  top: 77px;
-  right: 120px;
-  width: 75px;
-  height: 58px;
-  opacity: 0.2;
-}
 
 /* BOX EQUIPE */
 /* DIMENSÕES DOS RETÂNGULOS */
@@ -523,6 +519,7 @@ main .container-equipe .box-equipe{
   position: relative;
   gap: 20px; 
   padding: 10px;
+  bottom: -50px;
 
   }
 
