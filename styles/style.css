@@ -217,7 +217,7 @@ font-family: poppins;
 nav#nav-esq ul{
   list-style: none;
   display: flex; 
-  gap: 20px; /* o gap é o espaçamento entro os botões */
+  gap: 20px; 
   padding: 0px;
   margin: 0px;
   }
@@ -467,6 +467,8 @@ main .hero .content-hero{
   font-weight: 500;
 }
 
+
+
 /* CONTAINER DO TIME DE PROFISSIONAIS */
 
 .container-equipe{
@@ -479,11 +481,12 @@ main .hero .content-hero{
   background-color: #2C2C2C;
   margin: 0 auto;
   position: relative;
+  z-index: -1;
   
 }
 
 /* Títulos */
-.container-equipe h3{
+.container-equipe > h3{
   font-family: inter;
   font-weight: 700;
   color:#FFF;
@@ -491,6 +494,7 @@ main .hero .content-hero{
   text-align: left;
   width: 100%;
   padding-left: 102px;
+  margin-bottom: 5px;
 }
 
 .container-equipe h5{
@@ -507,43 +511,59 @@ main .hero .content-hero{
 
 /* BOX EQUIPE */
 /* DIMENSÕES DOS RETÂNGULOS */
-.container-equipe .box-equipe{ 
-  width: 995px; 
-  height: 602px; 
-  border-radius: 5px;
-  box-sizing: border-box;
+.box-equipe{ 
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  position: relative;
-  gap: 20px; 
-  padding: 10px;
-  bottom: -50px;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
 
   }
 
   /* ESTILIZAÇÃO DOS RETANGULOS */
-.container-equipe .box-equipe .retangulo {
-  width: 285px;
-  height: 210px;
-  background-color: #7D7D7D; 
-  border-radius: 5px;
-  position: relative;
+  .retangulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 285px;
+    height: 210px;
+    background-color: #7D7D7D;
+    border-radius: 5px;
+    position: relative;
+  }
+
+/* DIMENSIONAMENTO DAS IMAGENS DA EQUIPE */
+.retangulo .img-equipe img {
+  height: 250px;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.container-equipe .box-equipe .retangulo .retangulo-interno{
+
+/* DIMENSIONAMENTO RETÂNGULOS INTERNOS */
+.retangulo .retangulo-interno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 227px;
   height: 114px;
   border-radius: 5px;
-  background-color: #adadad; 
+  background-color: #adadad;
   position: absolute;
-  top: 127px; 
-  left: 29px; 
-  right: 29px; 
-  bottom: 31px; 
+  bottom: -25px;
   opacity: 0.9;
-
 }
+
+/* CONTAINER CONVERSE CONOSCO */
+.converse-conosco{
+  background-color: #FFF;
+  width: 1200px;
+  height: 1000px;
+}
+
 
 
 
