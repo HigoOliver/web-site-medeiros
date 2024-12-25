@@ -294,7 +294,7 @@ nav#nav-esq ul{
   margin: 0px;
   }
 
-/* Falta personalizar */
+/* efeito ao passar mouse no btn - Falta personalizar */
 header nav#nav-esq ul#menu-principal li a{
 text-decoration: none;
 font-size: 100%;
@@ -398,8 +398,8 @@ main .hero .content-hero{
   color:rgba(255, 255, 255, 0.5);
   text-align: left;
   padding: 0px;
-
 }
+
 
 .box-esquerda .slogan-empresa{
   display: flex;
@@ -407,20 +407,19 @@ main .hero .content-hero{
   align-items: flex-start;
   padding: 3px 0px 0px 0px;
   color:#FFF;
-
 }
+
 .box-esquerda .missao-empresa{
   display: flex;
   text-align: left;
   padding: 10px 0px 32px 0px;
   color:#FFF;
   font-weight:initial;
-  
 }
 
 .box-esquerda .btn-fale-conosco{
-  text-align: center;
   display: flex;
+  text-align: center;
   text-decoration: none;
   background-color: #FFF;
   color: #0d0d0d;
@@ -428,7 +427,6 @@ main .hero .content-hero{
   font-family: inter;
   font-weight: bolder;
   border-radius: 5px;
-
 }
 
 .box-esquerda .btn-saiba-mais{
@@ -444,7 +442,20 @@ main .hero .content-hero{
   font-weight: 600;
   border-radius: 5px;
   gap: 10px;
+}
 
+/* EFEITO AO PASSAR MOUSE NOS BOTÕES */
+.box-esquerda .btn-fale-conosco,
+.box-esquerda .btn-saiba-mais {
+  text-decoration: none;
+  font-size: 100%;
+  padding-bottom: 10px;
+  transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+.box-esquerda .btn-fale-conosco:hover,
+.box-esquerda .btn-saiba-mais:hover {
+  color: #AAA; /* Troque para a cor desejada */
 }
 
 .box-esquerda .btn-saiba-mais img{
@@ -547,7 +558,7 @@ main .hero .content-hero{
   justify-content: center;
   height: 1000px;
   width: 1200px;
-  background-color: #2C2C2C;
+  background-color: #151515;
 
 }
 
@@ -646,24 +657,25 @@ main .hero .content-hero{
  .fale-conosco{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 1200px;
   height: 1000px;
-  background-color: #2C2C2C;
+  background-color: #151515;
 
 }
 
-.content-fale-conosco{
+.info-fale-conosco{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 849px;
-  height: 835px;
-  background-color: #2C2C2C;
+  width: 835px;
+  height: 849px;
+  background-color: #151515;
+}
+
   /* border-style: solid;
   border-color: #FFF; */
 
-}
 
 .etapas-fale-conosco {
   display: flex;
@@ -684,7 +696,8 @@ main .hero .content-hero{
   height: 40px;
   background-color: #D9D9D9;
   color: #1D1D1D;
-  font-size: 18px;
+  font-size: 24px;
+  font-family: Roboto;
   font-weight: bold;
   border-radius: 50%;
   display: flex;
@@ -729,30 +742,47 @@ main .hero .content-hero{
   right: 165px;
 }
 
-/* ESTILIZAÇÃO PARÁGRAFOS FALE-CONOSCO */
-.paragrafo {
-  display: flex;
+/* ESTILIZAÇÃO PARÁGRAFOS ATENDIMENTO FALE-CONOSCO */
+
+.texto{
   font-family: Roboto;
   color: #D9D9D9;
   font-size: 24px;
-  line-height: auto;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 280px;
-  
+  width: 310px;
+  word-wrap: break-word; /* Quebra o texto para evitar ultrapassagens */
+
+}
+
+/* TENTAR COM AS DIMENSÕES EXATAS DO FIGMA */
+/* .texto.esquerdo-um{
   
 }
 
-.paragrafo.esquerdo {
+.texto.esquerdo-dois{
+  
+}
+
+.texto.direito-um{
+  
+}
+
+.texto.direito-dois{
+  
+} */
+
+.texto.esquerdo-um, .texto.esquerdo-dois {
   right: 125px;
 
 }
 
-.paragrafo.direito {
+.texto.direito-um, .texto.direito-dois {
   left: 125px;
 
 }
+
 
 
 
