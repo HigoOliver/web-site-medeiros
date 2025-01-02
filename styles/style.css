@@ -443,7 +443,7 @@ main .hero .content-hero{
   text-decoration: none;
   margin: 0 auto;
   font-family: inter;
-  font-weight: 600;
+  font-weight: 700;
   color: #FFF;
 }
 
@@ -470,26 +470,29 @@ main .hero .content-hero{
 .button-cta{
   display: inline-block;
   background-color: #5DC560; 
-  padding: 10px 35px; 
+  padding: 8px 40px; 
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .button-cta > a{
   display: block;
-  text-decoration: none; 
-  color: #FFF; 
+  text-decoration: none;
+  color: #FFF;
   font-family: Poppins, sans-serif;
   font-weight: 600;
 }
 
 .button-cta:hover {
-  background-color: #78e07e;
+  background-color: transparent;
+  border-color: #5DC560; 
 }
 
-
-
+.button-cta:hover a {
+  color: #5DC560;
+}
 
 
 .nossos-servicos{
