@@ -470,9 +470,9 @@ align-items: center;
 } 
 
 .act-button:hover {
-  background-color: #1b1b1bed;
+  background-color: #1b1b1b;
   color: #ffffff;
-  border-color: #FFFFFF;
+  border-color: #1b1b1b;
 }
 
 .act-button:hover img {
@@ -551,16 +551,10 @@ align-items: center;
   display: flex;
 }
 
-
-
-
-
-
-
-
-
-.container-nossa-missao{
+.container-title-nossa-missao{
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 915px;
   width: 1200px;
 }
@@ -592,6 +586,102 @@ align-items: center;
   font-family: poppins;
   color: #FFF
 }
+
+
+
+.container-nossa-missao{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 915px;
+}
+
+.content-nossa-missao{
+  display: flex;
+  width: 1200px;
+  height: 760px;
+}
+
+.content-esq{
+  display: flex;
+  width: 600px;
+  height: auto;
+}
+
+.content-dir{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: auto;
+}
+
+
+.missao > p{
+  display: flex;
+  font-family: poppins;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.missao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.icon-list-beneficio-ao-cliente{
+  display: flex;
+  width: 600px;
+  height: 40px;
+}
+
+.content-icon-list-beneficio-ao-cliente{
+  display: flex;
+  gap: 10px;
+}
+
+.content-icon-list-beneficio-ao-cliente > img{
+  display: flex;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+}
+
+.content-icon-list-beneficio-ao-cliente > p{
+  display: flex;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 24px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
