@@ -350,7 +350,7 @@ main{
 
 main .hero{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: row;
   width: 1200px; 
@@ -439,12 +439,39 @@ main .hero .content-hero{
   width: 160px;
   height: 43px;
   flex-direction: row;
+  text-decoration: none;
   justify-content: space-around;
   align-items: center;
   border: 3px solid #0d0d0d;
   border-radius: 5px;
+  cursor: pointer;
 } 
 
+.icon-saiba-mais{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+  color: #0d0d0d;
+}
+
+.btn-saiba-mais > a{
+  color: #0d0d0d;
+  text-decoration: none;
+  font-family: Poppins;
+  font-weight: 700;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-saiba-mais img{
+  width: 11px;
+  height: 11px;
+}
 
 
 .btn-faleconosco > a{
@@ -463,7 +490,9 @@ main .hero .content-hero{
 .btn-faleconosco:hover > a{
   color: #5DC560;
 }
-
+.btn-saiba-mais:hover > a{
+  background-color: #01BB32;
+}
 
 .cta-container{
   display: flex;
@@ -510,10 +539,55 @@ main .hero .content-hero{
   color: #5DC560;
 }
 
-
 .nossos-servicos{
   display: flex;
 }
+
+
+
+
+
+
+
+
+
+.container-nossa-missao{
+  display: flex;
+  height: 915px;
+  width: 1200px;
+}
+
+.title-nossa-missao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 154px;
+}
+
+.line-nossa-missao{
+  display: flex;
+  width: 10%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #FFF;
+  margin: 4px 0px 8px;
+}
+
+.title-nossa-missao > h1{
+  font-family: poppins;
+  color: #FFF;
+}
+
+.title-nossa-missao > h3{
+  font-family: poppins;
+  color: #FFF
+}
+
+
+
+
 
 .nossos-servicos-info{
   display: flex;
@@ -769,36 +843,6 @@ main .hero .content-hero{
   color: #5DC560;
 }
 
-
-
-.icon-saiba-mais{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  gap: 8px;
-  color: #0d0d0d;
-}
-
-
-.icon-saiba-mais > a{
-  color: #0d0d0d;
-  text-decoration: none;
-  font-family: Poppins;
-  font-weight: 700;
-  width: 100%; 
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-saiba-mais img{
-  width: 11px;
-  height: 11px;
-}
-
-
 /* BOX DIREITA */
 .box-direita{
   display: flex;
@@ -807,7 +851,6 @@ main .hero .content-hero{
   height: 870px;
 
 }
-
 
 .icon-atendimento{
   display: flex;
@@ -871,308 +914,36 @@ main .hero .content-hero{
 
 }
 
-/* CONTAINER DO TIME DE PROFISSIONAIS */
+/* ETAPAS DE ATENDIMENTO */
 
-.container-equipe{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 1000px;
+.container-etapas-atendimento{
+  background-color: #1B1B1B;
   width: 1200px;
-  background-color: #151515;
-  gap: 50px;
+  height: 1350px;
 }
 
-/* BOX EQUIPE */
-/* DIMENSÕES DOS RETÂNGULOS */
-.box-equipe{ 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
-  width: 800px;
-  height: auto;
-  gap: 50px;
+.title-container-atendimento{ 
+  background-color: red;
+  width: 1200px;
+  height: 250px;
 }
 
-.title-equipe{
-  display: flex;
+.title-container-atendimento > h1{
+  color: #FFFFFF;
+  font-family: poppins;
+  font-weight: bolder;
 }
 
-.title-equipe-info{
-    display: flex;
-    width: 1200px;
-    height: 200px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #151515;
-    color: #FFF;
-}
-
-.line-title-info{
-  width: 15%;
+.line-title-etapas{
+  width: 10%;
   height: 5px;
   background-color: #FFF;
   border-radius: 5px;
-  margin: 4px 0px 12px;
+  margin: 10px 0;
 }
 
-.title-equipe-info > h1{
+.title-container-atendimento > p{
+  color: #FFFFFF;
   font-family: Poppins;
-}
-
-
-
-
-
-  /* ESTILIZAÇÃO DOS RETANGULOS */
-  .retangulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: wrap;
-    width: 203px;
-    height: 306px;
-    background-color: #EBEBEB;
-    border-radius: 5px;
-    position: relative;
-  }
-
-/* DIMENSIONAMENTO DAS IMAGENS DA EQUIPE */
-.retangulo .img-equipe img {
-  height: 303px;
-  width: 203px;
-  position: absolute;
-  bottom: 45px;
-  align-items: center;
-}
-
-
-/* DIMENSIONAMENTO RETÂNGULOS INTERNOS */
-.retangulo .retangulo-interno {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 203px;
-  height: 93px;
-  border-radius: 0px 0px 5px 5px;
-  background-color: #EBEBEB;
-  position: absolute;
-  bottom: 0;
-  font-family: Roboto;
-}
-
-.retangulo .retangulo-interno h2{
-  margin: 0;
-  text-align: center;
-  font-size: 20px;
-  
-}
-
-.retangulo .retangulo-interno h3{
-  margin: 0;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-/* CONTAINER FALE CONOSCO */
- .fale-conosco{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1200px;
-  height: 1000px;
-  background-color: #151515;
-
-}
-
-.info-fale-conosco{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  width: 858px;
-  height: 755px;
-  background-color: #01BB32; /* 151515*/
-}
-
-/* ESTILIZAÇÃO PARÁGRAFOS ETAPAS L.D E L.E FALE-CONOSCO */
-.texto{
-  font-family: Roboto;
-  color: #EDEDED;
-  width: 200px;
-  font-weight: 500;
-  padding: 56px 0px;
-}
-
-.ajuste-lado-esquerdo{
-  padding: 15px 0px;
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  width: 280px;
-  height: 689px;
-  background-color: #bfd400;
-
-}
-
-.ajuste-lado-direito{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 280px;
-  height: 689px;
-  background-color: pink;
-
-}
-
-.etapa-lado-esquerdo > p{
-  font-size: 20px;
-  text-align: center;
-
-}
-
-.etapa-lado-direito > p{
-  font-size: 24px;
-  text-align: center;
-}
-
-/* DIV LADO ESQUERDO */
-.etapa-lado-esquerdo {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 689px;
-  width: 400px;
-  background-color: red;
-
-}
-
-.circulo-esquerdo-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 128px;
-  background-color: #EDEDED;
-  border-radius: 50%;
-  /* margin: 54px 0 49px 0; */
-  
-}
-
-.circulo-esquerdo-2 {
-  display: flex;
-  /* justify-content: flex-end; */
-  align-items: center;
-  width: 128px;
-  height: 128px;
-  background-color: #D9D9D9;
-  border-radius: 50%;
-  /* margin: 64px 0 0 0; */
-
-}
-
-/* DIV ETAPA CENTRO */
-.etapa-centro{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 58px;
-  height: 659px;
-  padding: 72px 10px;
-  background-color: #000000;
-
-}
-
-.circulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 38px;
-  height: 38px;
-  background-color: #EDEDED;
-  color: #1D1D1D;
-  font-family: roboto;
-  font-size: 24px;
   font-weight: bold;
-  border-radius: 50%;
-}
-
-/* .linha-pontilhada {
-  width: 2px;
-  height: 121px;
-  background: repeating-linear-gradient(
-    to bottom,
-    #fff,
-    #fff 5px,
-    transparent 5px,
-    transparent 10px
-  );
-
-} */
-
-/* LADO DIREITO DA DIV INFO FALE CONOSCO */
-.etapa-lado-direito {
-  display: flex;
-  flex-direction: row;
-  width: 400px;
-  height: 689px;
-  background-color: red;
-  
-}
-
-.circulo-direito-1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 128px;
-  background-color: #D9D9D9;
-  border-radius: 50%;
-  /* margin: 0px 0 69px 0; */
-}
-
-.circulo-direito-2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 128px;
-  background-color: #D9D9D9;
-  border-radius: 50%;
-  /* margin: 68px 0 85px 0; */
-}
-
-.etapa-inferior{
-  display: flex;
-  background-color: #09cba1; /* #151515 */
-  width: 858px;
-  height: 66px;
-  justify-content: center;
-  
-}
-
-.btn-converse-conosco{
-  display: flex;
-  justify-content: center;
-  background-color: #FFF;
-  align-items: center;
-  border-radius: 10px;
-  height: 65px;
-  width: 278px;
-  
-}
-
-.btn-converse-conosco > a{
-  text-decoration: none;
-  font-family: inter;
-  font-weight: 800;
-  font-size: 20px;
-  color: #151515;
 }
