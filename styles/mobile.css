@@ -195,12 +195,21 @@
     text-align: center;
   }
 
+  .footer-column-logo{
+    flex: 1 1 100%;
+    align-items: center;
+  }
+
   .footer-column {
     flex: 1 1 100%;
   }
 
   form {
     flex-direction: column;
+  }
+
+  .footer-colum-submit{
+    flex: 1 1 100%;
   }
 
   form input[type="email"],
