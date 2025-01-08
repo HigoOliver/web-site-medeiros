@@ -1687,9 +1687,17 @@ footer h3 {
   flex: 1 1 200px;
 }
 
+.footer-column-logo p{
+  font-size: 0.8rem;
+  opacity: 50%;
+
+  
+}
+
 .footer-column h3{
   color: #5DC560;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .footer-column ul{
@@ -1770,6 +1778,31 @@ form button{
 }
 
 .footer-colum-submit h3{
-  margin-bottom: 0;
+  margin-bottom: 5px;
   font-size: 1rem;
+  font-weight: 600;
+}
+
+.background-column-submit{
+  display: flex;
+  justify-content: center;
+  border: solid 1px #5DC560;
+  width: 400px;
+  height: 60px;
+  border-radius: 5px;
+  
+}
+
+.background-column-submit .form-style{
+  min-width: 280px;
+  font-family: poppins;
+}
+
+.background-column-submit .btn-submit{
+  font-family: poppins;
+  color: #5DC560;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
 }

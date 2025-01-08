@@ -216,4 +216,29 @@
   form button {
     width: 100%;
   }
+
+  .background-column-submit{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .background-column-submit .form-style{
+    width: 100%;
+    font-family: Poppins;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .background-column-submit .btn-submit{
+    width: 100%; /* Botão ocupa toda a largura disponível */
+    font-family: Poppins, sans-serif;
+    color: #5DC560;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: center;
+  }
 }
