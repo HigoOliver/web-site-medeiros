@@ -1120,354 +1120,96 @@ align-items: center;
 
 }
 
-/* ETAPAS DE ATENDIMENTO */
-.container-etapas-atendimento{
-  background-color: #151515;
-  width: 1200px;
-  height: 1350px;
-}
 
-.title-container-atendimento{ 
+
+
+
+
+
+
+
+
+/* ETAPAS DE ATENDIMENTO */
+
+.etapas-section{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
-  background-color: #151515; 
-  width: 1200px;
-  height: 250px;
+  padding: 4rem 2rem;
+  font-family: Poppins;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  color: #FFF;
 
 }
 
-.title-container-atendimento > h1{
-  text-align: center;
-  color: #FFFFFF;
-  font-family: poppins;
-  font-weight: bolder;
-}
-
-.linha-titulo-etapas{
+.line-title-etapas{
+  background-color: #FFF;
+  max-width: 100%;
   width: 10%;
   height: 5px;
-  background-color: #FFF;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 0 0 1rem 0;
 }
 
-.title-container-atendimento > p{
-  text-align: center;
-  color: #E3E3E3;
-  opacity: 70%;
-  font-family: Poppins;
-  font-weight: bold;
-}
-
-.content-etapas{
+.etapas-container{
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
-  flex-direction: column;
+  align-items: flex-start;
+}
+
+.etapa-card-1{
+  display: flex;
   align-items: center;
   background-color: #151515;
-  width: 1200px;
-  height: 1100px;
-  gap: 30px;
-}
-
-.inicio-atendimento{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1050px;
-  height: 205px;
-
-}
-
-.inicio-atendimento > p{
-  width: 452px;
-  height: auto;
-  align-items: center;
-  text-align: center;
-  color: #FFF;
-  font-weight: 400;
-  font-family: roboto;
-  font-size: 22px;
-}
-
-.style-inicio-atendimento{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 1000px;
-  height: 200px;
-  background-color: #0C0C0C;
   border-radius: 5px;
+  padding: 3rem 3rem;
+  gap: 2rem;
 }
 
-.style-inicio-atendimento > .circulo-inicio{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 128px;
-  background-color: #5DC560;
-  border-radius: 50%;
-  position: relative;
-}
-
-.circulo-inicio > img{
-  display: flex;
-  position: absolute;
-  width: 55px;
+.background-icon-whatsapp{
+  width: 50px;
   height: 50px;
-}
-
-.style-inicio-atendimento > p{
-  font-family: Poppins;
-  color: #FFF;
-  font-size: 22px;
-  width: 400px;
-  text-align: center;
-}
-
-.topico-inicio-atendimento{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-  border: solid 3px #5DC560;
-}
-
-.topico-inicio-atendimento > .style-p{
-  display: flex;
-  font-family: poppins;
-  color: #FFF;
-  font-weight: 700;
-  font-size: 16px;
-
-}
-
-.envio-documentos{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1050px;
-  height: 205px;
-}
-
-.style-envio-documentos{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 1000px;
-  height: 200px;
-  background-color: #0C0C0C;
-  border-radius: 5px;
-}
-
-.style-envio-documentos > .circulo-documentos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 128px;
   background-color: #5DC560;
   border-radius: 50%;
-  position: relative;
-}
-
-.circulo-documentos > img{
-  display: flex;
-  position: absolute;
-  width: 55px;
-  height: 50px;
-}
-
-.style-envio-documentos > p{
-  font-family: Poppins;
-  color: #FFF;
-  font-size: 22px;
-  width: 400px;
-  text-align: center;
-}
-
-.topico-envio-documentos{
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-  border: solid 3px #5DC560;
+  align-items: center ;
 }
 
-.topico-envio-documentos > .style-p{
-  display: flex;
-  font-family: poppins;
-  color: #FFF;
-  font-weight: 700;
-  font-size: 16px;
+.background-icon-whatsapp img{
+  max-width: 70%; 
 }
 
-.foco-exclusivo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1050px;
-  height: 205px;
-}
-
-.style-foco-exclusivo{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 1000px;
-  height: 200px;
-  background-color: #0C0C0C;
-  border-radius: 5px;
-
-}
-
-.style-foco-exclusivo > .circulo-exclusivo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 128px;
-  background-color: #5DC560;
-  border-radius: 50%;
-  position: relative;
-}
-
-.circulo-exclusivo > img{
-  display: flex;
-  position: absolute;
-  width: 55px;
-  height: 50px;
-}
-
-.style-foco-exclusivo > p{
-  font-family: Poppins;
-  color: #FFF;
-  font-size: 22px;
-  width: 400px;
-  text-align: center;
-}
-
-.topico-foco-exclusivo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-  border: solid 3px #5DC560;
-}
-
-.topico-foco-exclusivo > .style-p{
-  display: flex;
-  font-family: poppins;
-  color: #FFF;
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.esta-pronto{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 1050px;
-  height: 205px;
-}
-
-.style-esta-pronto{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #0C0C0C;
-  width: 1000px;
-  height: 200px;
-  border-radius: 5px;
-}
-
-.style-esta-pronto > .circulo-pronto{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 128px;
-  height: 128px;
-  background-color: #5DC560;
-  border-radius: 50%;
-  position: relative;
+.background-icon-whatsapp p{
+  
 }
 
 
-.circulo-pronto > img {
-  display: flex;
-  width: 55px;
-  height: 50px;
-  position: absolute;
-}
 
-.style-esta-pronto > p{
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 22px;
-  width: 400px;
-  text-align: center;
-}
 
-.topico-esta-pronto{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border: 3px solid #5DC560;
-  border-radius: 50%;
-  position: relative;
-}
 
-.topico-esta-pronto > .style-p{
-  color: #FFF;
-  font-weight: 700;
-  font-family: poppins;
-  position: absolute;
-}
 
-.content-btn-empresa{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1050px;
-  height: 70px;
 
-}
 
-.act-abrir-empresa{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  border: solid 3px #5DC560;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: Poppins;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: #5DC560;
-  color: #FFF;
-  width: 332px;
-  height: 56px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
 
-.act-abrir-empresa:hover{
-  background-color: transparent;
-  border: 2px solid #5DC560;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .feedback-section{
   display: flex;
@@ -1499,6 +1241,7 @@ align-items: center;
   margin-bottom: 3rem;
   color: #bbb;
 } 
+
 
 .feedback-container{
   display: flex;

@@ -232,13 +232,13 @@
   }
 
   .background-column-submit .btn-submit{
-    width: 100%; /* Botão ocupa toda a largura disponível */
+    width: 100%;
     font-family: Poppins, sans-serif;
     color: #5DC560;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 10px; /* Adiciona espaçamento interno */
+    padding: 10px;
     text-align: center;
   }
 }
