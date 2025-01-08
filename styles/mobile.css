@@ -133,19 +133,19 @@
 
 /* NAVEBAR */
 
-@media screen and (max-width: 630px) {
+/* @media screen and (max-width: 630px) { */
   /* MENU HAMBURGUER */ 
-  header nav#nav-esq{
+  /* header nav#nav-esq{
     justify-content: space-between;
-  }
+  } */
 
-  header nav#nav-esq ul#icone-menu{
+  /* header nav#nav-esq ul#icone-menu{
     display: flex;
-  }
+  } */
 
   /* MENU */
 
-  header nav#nav-esq ul#menu-principal{
+  /* header nav#nav-esq ul#menu-principal{
     flex-direction: column;
     width: 50%;
     height: 85vh;
@@ -154,22 +154,57 @@
     position: absolute;
     top: 13.1rem;
     right: 0;
-    z-index: 999;
+    z-index: 999; */
 
     /*display: none;*/
 
-  }
-
+  /* } */
+/* 
   header nav#nav-esq ul#menu-principal li{
     margin: .5rem;
     margin-left: 1rem;
 
+  } */
+
+  /* header nav#nav-esq ul#menu-principal li a{
+    font-size: 120%;
+  } */
+/* } */
+
+@media screen and (max-width: 1020px){
+  /* Cabeçalho */
+  .btns-menu{
+    display: none;
   }
 
-  header nav#nav-esq ul#menu-principal li a{
-    font-size: 120%;
-  }
 }
 
 
 
+
+
+
+
+
+
+/* Responsividade FOOTER */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form input[type="email"],
+  form button {
+    width: 100%;
+  }
+}
