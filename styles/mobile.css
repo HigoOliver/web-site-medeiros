@@ -241,4 +241,31 @@
     padding: 10px;
     text-align: center;
   }
+
+  .box-esquerda{
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .box-direita{
+    display: none;
+  }
+
+  .main .hero{
+    width: 100%;
+    height: inherit;
+    padding: 12rem 0;
+  }
+
+  .content-hero{
+    width: 100%;
+
+  }
+
 }
+
+/* 840 660 768 927 1024 266 1366 */
+
+/* 1077 bp */

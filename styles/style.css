@@ -831,28 +831,28 @@ align-items: center;
   margin-top: 5rem;
 }
 
-.cartao-servicos, .cartao-servicos-2{
+.cartao-servicos{
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   max-width: 350px;
-  height: 23.75rem;
-  padding: 1.5rem;
+  min-height: 23.75rem;
+  padding: 2.25rem 1.5rem 1.5rem 1.5rem;
   border: 3px solid #FFF;
   border-radius: 5px;
   background-color: transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cartao-servicos:hover, .cartao-servicos-2:hover {
+.cartao-servicos:hover {
   transform: translateY(-10px);
   box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
 }
 
-.circulo-icon, .circulo-icon-2 {
+.circulo-icon {
   position: absolute;
   top: -2.25rem;
     left: 50%;
@@ -866,14 +866,22 @@ align-items: center;
     align-items: center;
 }
 
-.circulo-icon img, .circulo-icon-2 img {
+.circulo-icon img {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.cartao-servicos h3, .cartao-servicos-2 h3 {
+
+
+.cartao-servicos h3{
   font-size: 1.25rem;
-  margin: 3rem 0 0.5rem 0;
+  margin: 1.3125rem 0 0.5rem 0;
+}
+
+.cartao-servicos > p{
+  display: flex;
+  flex: 1;
+  align-items: center;
 }
 
 .line-title-cartao {
