@@ -552,225 +552,177 @@ align-items: center;
   color: #5DC560;
 }
 
-.container-title-nossa-missao{
+#nossa-missao{
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 915px;
-  width: 1200px;
-}
-
-.title-nossa-missao{
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  width: 1200px;
-  height: 154px;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  font-family: Poppins;
+  color: #FFF;
+  gap: 1rem;
 }
 
-.line-nossa-missao{
+#nossa-missao > h1{
+  font-size: 2rem;
+}
+
+.line-title-missao{
   display: flex;
   width: 10%;
   height: 5px;
   border-radius: 5px;
   background-color: #FFF;
   margin: 4px 0px 8px;
-}
+} 
 
-.title-nossa-missao > h1{
-  font-family: poppins;
-  color: #FFF;
-}
-
-.title-nossa-missao > p{
-  font-family: poppins;
+#nossa-missao > p{
+  font-size: 1.25rem;
   color: #E3E3E3;
   opacity: 70%;
 }
 
 .container-nossa-missao{
   display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  gap: 2rem;
+}
+
+.box-esquerda-missao{
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.box-direita-missao{
+  display: flex;
   flex-direction: column;
-  width: 1200px;
-  height: 915px;
-}
-
-.content-nossa-missao{
-  display: flex;
-  width: 1200px;
-  height: 760px;
-}
-
-.content-esq{
-  display: flex;
-  width: 600px;
-  height: auto;
-}
-
-.content-dir{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  height: auto;
-}
-
-.missao > p{
-  display: flex;
-  font-family: poppins;
-  font-size: 24px;
-  color: #FFF;
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
   text-align: start;
-  margin-bottom: 15px;
+  gap: 1rem;
 }
 
-.missao{
-  display: flex;
+.box-direita-missao > ul{
+  display: flex; 
   flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-missao{
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+
+.icon-missao > p{
+  display: flex;
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  gap: 15px;
 }
 
-
-.icon-list-beneficio-ao-cliente{
+.icon-missao img{
   display: flex;
-  width: 600px;
-  height: 40px;
-  align-items: center;
+  justify-content: start;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 10px;
 }
 
-.content-icon-list-beneficio-ao-cliente{
+.style-btn-missao{
   display: flex;
-  gap: 10px;
+  gap: 1.5rem;
 }
 
-.content-icon-list-beneficio-ao-cliente > img{
-  display: flex;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  align-items: center;
-}
-
-.content-icon-list-beneficio-ao-cliente > p{
-  display: flex;
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 18px;
-  align-items: center;
-}
-
-.icon-list-foco-em-empresarios{
-  display: flex;
-  width: 600px;
-  height: 40px;
-  align-items: center;
-}
-
-.content-icon-list-foco-em-empresarios{
-  display: flex;
-  align-items: center;
-  width: 600px;
-  height: 40px;
-  gap: 10px;
-}
-
-.content-icon-list-foco-em-empresarios > img{
-  display: flex;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  align-items: center;
-}
-
-.content-icon-list-foco-em-empresarios > p{
-  display: flex;
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 18px;
-  align-items: center;
-}
-
-.icon-list-suporte-especializado-e-acessivel{
-  display: flex;
-  width: 600px;
-  height: 40px;
-
-}
-
-
-.content-icon-list-suporte-especializado-e-acessivel{
-  display: flex;
-  align-items: center;
-  width: 600px;
-  height: 40px;
-  gap: 10px;
-
-}
-
-
-.content-icon-list-suporte-especializado-e-acessivel > p{
-  display: flex;
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 18px;
-  align-items: center;
-
-}
-
-.content-icon-list-suporte-especializado-e-acessivel >img{
-  display: flex;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  align-items: center;
-}
-
-.btns-nossa-missao{
-  display: flex;
-  width: 600px;
-  height: 40px;
-  margin-top: 10px;
-  gap: 30px;
-}
-
-.btn-abrir-empresa-agora{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.act-abrir-empresa-agora{
+.btn-abrir-missao{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #5DC560;
-  width: 240px;
-  height: 40px;
+  
+  width: 100%;
+  width: 15rem;
+  height: 2.5rem;
   border-radius: 5px;
-  text-decoration: none;
   color: #FFF;
-  font-family: Poppins;
-  font-weight: 600;
+  cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-.act-abrir-empresa-agora:hover{
+
+
+/* .etapa-botao {
+  border: solid 2px #5DC560; 
+  margin-top: 4rem;
+  padding: 0.9rem 2rem; 
+  font-size: 16px; 
+  font-weight: 600; 
+  border-radius: 5px; 
+  background-color: transparent; 
+  color: #5DC560; 
+  font-family: Poppins, sans-serif; 
+  cursor: pointer; 
+} */
+
+
+
+
+
+.btn-abrir-missao > a{
+  text-decoration: none;
+  color: #FFF;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-abrir-missao:hover{
   background-color: transparent;
   color: #5DC560;
   border: 2px solid #5DC560; 
-  
+
 }
 
 .btn-servicos-missao{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
+  background-color: transparent;
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+.btn-servicos-missao a {
+  display: flex;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.act-servicos-missao{
+
+.btn-servicos-missao{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -786,11 +738,17 @@ align-items: center;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.act-servicos-missao:hover{
+.btn-servicos-missao:hover{
   background-color: #5DC560; 
   color: #FFF;
   border: 2px solid #5DC560; 
 }
+
+
+
+
+
+
 
 /* NOSSO SERVIÇOS ESTILIZAÇÃO */
 .servicos-section{
@@ -870,8 +828,6 @@ align-items: center;
   width: 2.5rem;
   height: 2.5rem;
 }
-
-
 
 .cartao-servicos h3{
   font-size: 1.25rem;
