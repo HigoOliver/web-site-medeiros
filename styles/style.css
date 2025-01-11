@@ -552,203 +552,174 @@ align-items: center;
   color: #5DC560;
 }
 
-#nossa-missao{
+
+.missao{
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   width: 100%;
-  font-family: Poppins;
-  color: #FFF;
-  gap: 1rem;
 }
 
-#nossa-missao > h1{
-  font-size: 2rem;
-}
-
-.line-title-missao{
+.nossa-missao{
   display: flex;
-  width: 10%;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #FFF;
-  margin: 4px 0px 8px;
-} 
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 8rem;
+  margin: 2rem;
+  max-width: 1170px;
+  min-width: 768px;
+  width: 100%;
+  background-color: #050505;
+  border-radius: 10px;
+}
 
-#nossa-missao > p{
-  font-size: 1.25rem;
-  color: #E3E3E3;
+.container-missao{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.square{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 15px;
+  height: 15px;
+  background-color: #FFF;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.nossa-missao h3{
+  font-family: poppins;
+  font-size: 0.890rem;
+  max-width: 21.875rem;
+  font-weight: 250;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #FFF;
   opacity: 70%;
 }
 
-.container-nossa-missao{
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  gap: 2rem;
-}
-
-.box-esquerda-missao{
-  display: flex;
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-.box-direita-missao{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 600px;
-  min-width: 200px;
-  text-align: start;
-  gap: 1rem;
-}
-
-.box-direita-missao > ul{
-  display: flex; 
-  flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.icon-missao{
-  display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-
-.icon-missao > p{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.icon-missao img{
-  display: flex;
-  justify-content: start;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-right: 10px;
-}
-
-.style-btn-missao{
-  display: flex;
-  gap: 1.5rem;
-}
-
-.btn-abrir-missao{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #5DC560;
-  
-  width: 100%;
-  width: 15rem;
-  height: 2.5rem;
-  border-radius: 5px;
-  color: #FFF;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-
-/* .etapa-botao {
-  border: solid 2px #5DC560; 
-  margin-top: 4rem;
-  padding: 0.9rem 2rem; 
-  font-size: 16px; 
-  font-weight: 600; 
-  border-radius: 5px; 
-  background-color: transparent; 
-  color: #5DC560; 
-  font-family: Poppins, sans-serif; 
-  cursor: pointer; 
-} */
-
-
-
-
-
-.btn-abrir-missao > a{
-  text-decoration: none;
-  color: #FFF;
-  font-size: 0.9rem;
-  font-weight: 600;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn-abrir-missao:hover{
-  background-color: transparent;
+.nossa-missao h1:first-of-type{
   color: #5DC560;
-  border: 2px solid #5DC560; 
-
-}
-
-.btn-servicos-missao{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  width: 15rem;
-  height: 2.5rem;
-  border-radius: 5px;
-  color: #FFF;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  
-}
-.btn-servicos-missao a {
-  display: flex;
-  text-decoration: none;
-  color: #FFF;
-  font-size: 0.9rem;
-  font-weight: 600;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.btn-servicos-missao{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  border: solid 3px #5DC560;
-  width: 240px;
-  height: 40px;
-  border-radius: 5px;
-  text-decoration: none;
   font-family: Poppins;
-  font-weight: 600;
-  color: #5DC560;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-size: 6rem;
+  position: relative;
+  right: 5.625rem;
+ 
+
 }
 
-.btn-servicos-missao:hover{
-  background-color: #5DC560; 
+h1:nth-of-type(2) {
   color: #FFF;
-  border: 2px solid #5DC560; 
+  font-family: Poppins;
+  font-size: 6rem;
+  position: relative;
+  bottom: 4.0625rem;
+  left: 1.875rem;
 }
 
 
+.text-missao{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.simbolo{
+  font-size: 3rem;
+  font-family: roboto;
+  position: relative;
+  bottom: 0.9375rem;
+  left: 0.625rem;
+  color: #5DC560;
+  
+}
 
 
+.light-bar-green{
+  background-color: #5DC560;
+  width: 21px;
+  height: 110px;
+  box-shadow: 0 0 10px 5px rgba(93, 196, 96, 0.7);
+}
 
+.text-missao > p{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #FFF;
+  font-family: Roboto;
+  padding-left: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 200;
+  width: 600px;
+  height: 159px;
 
+}
+
+.text-valores{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.text-valores > p{
+  display: flex;
+
+  align-items: center;
+  text-align: end;
+  color: #FFF;
+  font-family: Roboto;
+  padding-right: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 200;
+  width: 600px;
+  height: 159px;
+}
+
+.light-bar-while{
+  background-color: #FFF;
+  width: 21px;
+  height: 110px;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transform: rotate(90deg);
+}
+
+.button img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s, fill 0.3s;
+}
+
+.button:hover img{
+  transform: scale(1.2);
+  fill: #77e97b;
+}
+
+.button:active img {
+  transform: scale(1.2);
+  fill: #77e97b;
+}
 
 /* NOSSO SERVIÇOS ESTILIZAÇÃO */
 .servicos-section{
