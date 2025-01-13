@@ -199,8 +199,6 @@
   font-weight: 900;
   font-style: italic;
 }
-
-
 */
 
 html {
@@ -502,6 +500,7 @@ align-items: center;
   color: #5DC560;
 }
 
+/* CTA CONTAINER  */
 .cta-container{
   display: flex;
   justify-content: center;
@@ -1037,27 +1036,6 @@ h1:nth-of-type(2) {
   font-family: Poppins, sans-serif; 
   cursor: pointer; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .feedback-section{
   display: flex;
