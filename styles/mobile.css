@@ -180,14 +180,6 @@
 }
 
 
-
-
-
-
-
-
-
-/* Responsividade FOOTER */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -195,7 +187,7 @@
     text-align: center;
   }
 
-  .footer-column-logo{
+  .footer-column-logo {
     flex: 1 1 100%;
     align-items: center;
   }
@@ -208,7 +200,7 @@
     flex-direction: column;
   }
 
-  .footer-colum-submit{
+  .footer-colum-submit {
     flex: 1 1 100%;
   }
 
@@ -217,21 +209,21 @@
     width: 100%;
   }
 
-  .background-column-submit{
+  .background-column-submit {
     width: 100%;
     height: auto;
     padding: 10px;
     border-radius: 5px;
   }
 
-  .background-column-submit .form-style{
+  .background-column-submit .form-style {
     width: 100%;
     font-family: Poppins;
     padding: 8px;
     margin-bottom: 10px;
   }
 
-  .background-column-submit .btn-submit{
+  .background-column-submit .btn-submit {
     width: 100%;
     font-family: Poppins, sans-serif;
     color: #5DC560;
@@ -242,30 +234,110 @@
     text-align: center;
   }
 
-  .box-esquerda{
+  .box-esquerda {
     height: inherit;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
 
-  .box-direita{
-    display: none;
-  }
-
-  .main .hero{
+  .main .hero {
     width: 100%;
     height: inherit;
     padding: 12rem 0;
   }
 
-  .content-hero{
-    width: 100%;
-
+  .content-hero {
+    width: 100%;  
   }
+}
+
+/* Responsividade BOX DIREITA */
+@media (max-width: 1075px) {
+  .box-direita {
+    display: none;
+  }
+  
+  .hero .content-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  
 
 }
 
+@media (max-width: 600px) {
+  .missao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+  }
+}
+
+@media (max-width: 1050px) {
+  .missao {
+    flex-direction: column; 
+    padding: 1rem; 
+  }
+
+  .nossa-missao {
+    padding: 2rem 1rem;  
+    min-width: auto; 
+    max-width: 90%; 
+  }
+
+  .simbolo{
+    display: none;
+  }
+
+  .nossa-missao h1:first-of-type,
+  h1:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    font-size: 4.2rem; 
+    position: relative;
+    margin: 15px;
+    left: 0.1rem;
+    
+    
+  }
+
+
+  .text-missao > p,
+  .text-valores > p {
+    width: auto; 
+    font-size: 1rem; 
+  }
+
+  .light-bar-green,
+  .light-bar-while {
+    width: 15px; 
+    height: 80px; 
+  }
+
+  .button {
+    width: 40px; 
+    height: 40px;
+  }
+
+  .button img {
+    width: 20px; 
+    height: 20px;
+  }
+}
 /* 840 660 768 927 1024 266 1366 */
 
-/* 1077 bp */
+/* 1075 bp */

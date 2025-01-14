@@ -212,16 +212,21 @@ html {
 }
 
 /* HEADER */
-header{
-font-family:inter;
-width: 100%;
-height: 210px;
+header {
+  width: 100%;
+  position: fixed; 
+  top: 0;  
+  left: 0;
+  z-index: 1000;
+  background-color: #fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* NAVEBAR */
 header nav#nav-esq{
 width: 100%;
-height: 210px;
+height: 130px; 
+/* antes 210px */
 background-color: #0d0d0d;
 display: flex;
 
@@ -235,8 +240,8 @@ padding: 0;
 /*SOMBREAMENTO ABAIXO DA NEVABAR*/ 
 position: absolute;
 border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-box-shadow: 0px 0px 10px 12px rgba(0, 0, 0, 1);
-z-index: 1;
+box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 1);
+/* z-index: 1; */
 } 
 
 /*TRABALHAR NA LOGO*/
@@ -245,8 +250,8 @@ max-width: 100px;
 }
 
 header nav#nav-esq div#logo{
-width: 144px;
-height: 86px;
+width: 100px;
+height: auto;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -353,7 +358,6 @@ main{
 
 main .hero{
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: row;
   width: 1200px; 
@@ -506,10 +510,14 @@ align-items: center;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
-  height: 300px;
-  background-color: #0c0c0c;
-  gap: 10px;
+  width: 100%;
+  min-height: 300px;
+  background-color:transparent;
+  gap: 3rem;
+}
+
+.conteudo-cta-container{
+  text-align: center;
 }
 
 .conteudo-cta-container > p{
@@ -551,7 +559,7 @@ align-items: center;
   color: #5DC560;
 }
 
-
+/* DIV NOSSA MISSÃO */
 .missao{
   display: flex;
   justify-content: center;
@@ -567,7 +575,8 @@ align-items: center;
   padding: 2.5rem 8rem;
   margin: 2rem;
   max-width: 1170px;
-  min-width: 768px;
+  min-width: 500px;
+  height: auto;
   width: 100%;
   background-color: #050505;
   border-radius: 10px;
@@ -734,6 +743,22 @@ h1:nth-of-type(2) {
   color: #FFF;
 }
 
+.servicos-background{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  min-width: 500px;
+  height: auto;
+  background-color: #050505;
+  width: 100%;
+  border-radius: 10px;
+  padding: 4.5rem 0;
+  
+  
+}
+
 .servicos-section > h1{
   font-size: 2rem;
 }
@@ -741,12 +766,16 @@ h1:nth-of-type(2) {
 .servicos-section > p{
   font-size: 1rem;
 }
+
+
 .line-title-servicos{
-  width: 10%;
+  
+  width: 100%;
+  width: 70px;
   height: 5px;
   background-color: #FFF;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 0 auto 1rem;
 }
 
 .nossos-servicos-container{
@@ -849,6 +878,23 @@ h1:nth-of-type(2) {
   background-color: transparent; 
   border: 2px solid #5DC560;
 }
+
+.backgroud-section{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* BOX DIREITA */
@@ -1037,6 +1083,19 @@ h1:nth-of-type(2) {
   cursor: pointer; 
 }
 
+.etapa-botao:hover{
+  transition: all 0.5s ease;
+  background-color: #5DC560;
+  color: #FFF;
+}
+
+
+
+/* FEEDBACK SECTION */
+
+
+
+
 .feedback-section{
   display: flex;
   flex-direction: column;
@@ -1074,35 +1133,43 @@ h1:nth-of-type(2) {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  align-items: flex-start;
   margin: 0 auto;
-  
+  align-items: flex-end;
+
 }
 
 .feedback-cartao{
+  display: flex;
   background-color: #151515;
   color: #FFF;
   padding: 2rem;
   border-radius: 5px;
   width: 300px;
-  text-align: left;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-bottom: 8px solid #5DC560;
-  min-height: 250px;
+  min-height: 380px;
+  
 }
 
 .feedback-cartao p{
+  text-align: center;
+  margin: auto 0;
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  
 }
 
 .feedback-footer {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.circulo-feedback img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
 }
 
 .feedback-footer .circulo-feedback{
@@ -1114,16 +1181,8 @@ h1:nth-of-type(2) {
 
 .feedback-footer .linha-nome{
   flex-grow: 1;
-  height: 12px;
-  background-color: #333;
   border-radius: 5px;
 }
-
-
-
-
-
-
 
 
 /* Footer */
@@ -1287,3 +1346,5 @@ form button{
   cursor: pointer;
 
 }
+
+
