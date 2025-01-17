@@ -1,0 +1,343 @@
+/* Cores Utilizadas no Projeto
+
+#EBEBF2
+#A4ABBF
+#2D3540
+#A69898
+#0D0D0D
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+// <uniquifier>: Use a unique and descriptive class name
+
+.jaro-<uniquifier> {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*\
+
+/* NAVEBAR */
+
+/* @media screen and (max-width: 630px) { */
+  /* MENU HAMBURGUER */ 
+  /* header nav#nav-esq{
+    justify-content: space-between;
+  } */
+
+  /* header nav#nav-esq ul#icone-menu{
+    display: flex;
+  } */
+
+  /* MENU */
+
+  /* header nav#nav-esq ul#menu-principal{
+    flex-direction: column;
+    width: 50%;
+    height: 85vh;
+    background-color: rgb(82, 113, 113);
+    padding-top: .9rem;
+    position: absolute;
+    top: 13.1rem;
+    right: 0;
+    z-index: 999; */
+
+    /*display: none;*/
+
+  /* } */
+/* 
+  header nav#nav-esq ul#menu-principal li{
+    margin: .5rem;
+    margin-left: 1rem;
+
+  } */
+
+  /* header nav#nav-esq ul#menu-principal li a{
+    font-size: 120%;
+  } */
+/* } */
+
+@media screen and (max-width: 1020px){
+  /* Cabeçalho */
+  .btns-menu{
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column-logo {
+    flex: 1 1 100%;
+    align-items: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .footer-colum-submit {
+    flex: 1 1 100%;
+  }
+
+  form input[type="email"],
+  form button {
+    width: 100%;
+  }
+
+  .background-column-submit {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .background-column-submit .form-style {
+    width: 100%;
+    font-family: Poppins;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .background-column-submit .btn-submit {
+    width: 100%;
+    font-family: Poppins, sans-serif;
+    color: #5DC560;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .box-esquerda {
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main .hero {
+    width: 100%;
+    height: inherit;
+    padding: 12rem 0;
+  }
+
+  .content-hero {
+    width: 100%;  
+  }
+}
+
+/* Responsividade BOX DIREITA */
+@media (max-width: 1075px) {
+  .box-direita {
+    display: none;
+  }
+  
+  .hero .content-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  
+
+}
+
+@media (max-width: 600px) {
+  .missao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+  }
+}
+
+@media (max-width: 1050px) {
+  .missao {
+    flex-direction: column; 
+    padding: 1rem; 
+  }
+
+  .nossa-missao {
+    padding: 2rem 1rem;  
+    min-width: auto; 
+    max-width: 90%; 
+  }
+
+  .simbolo{
+    display: none;
+  }
+
+  .nossa-missao h1:first-of-type,
+  h1:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    font-size: 4.2rem; 
+    position: relative;
+    margin: 15px;
+    left: 0.1rem;
+    
+    
+  }
+
+
+  .text-missao > p,
+  .text-valores > p {
+    width: auto; 
+    font-size: 1rem; 
+  }
+
+  .light-bar-green,
+  .light-bar-while {
+    width: 15px; 
+    height: 80px; 
+  }
+
+  .button {
+    width: 40px; 
+    height: 40px;
+  }
+
+  .button img {
+    width: 20px; 
+    height: 20px;
+  }
+}
+/* 840 660 768 927 1024 266 1366 */
+
+/* 1075 bp */
