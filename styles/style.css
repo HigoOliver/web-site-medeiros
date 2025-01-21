@@ -13,8 +13,8 @@ html {
 /* HEADER */
 header {
   width: 100%;
-  position: fixed; 
-  top: 0;  
+  position: fixed;
+  top: 0;
   left: 0;
   z-index: 1000;
   background-color: #fff; 
@@ -57,10 +57,6 @@ justify-content: center;
 
 }
 
-header nav#nav-esq div#logo img{
-max-width: 100%;
-max-height: 100%;
-}
 
 
 .dropdown-menu{
@@ -122,9 +118,9 @@ flex-flow: wrap;
 
 header nav#nav-esq ul#menu-principal li{
 list-style: none;
-font-size: 16px;
+font: 16px "Poppins";
 margin-right: 57px;
-font-family: poppins;
+
 }
 
 /* AJUSTES PRA ESPAÇAMENTO ENTRE OS BOTOES*/
@@ -157,8 +153,7 @@ color: #0d0d0d;
 padding: 10px 15px;
 border-radius: 5px;
 text-align: center;
-font-family: poppins;
-font-weight: bold;
+font: bold 16px "Poppins";
 
 }
 
@@ -227,6 +222,7 @@ main .hero .content-hero{
   height: 870px;
   font-family: inter;
   font-weight: bold;
+  font: bold 16px "Inter", "Sans-serif";
 }
 
 .box-esquerda .content-box-esquerda{
@@ -412,8 +408,7 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   padding: 2.5rem 8rem;
-  margin: 2rem;
-  max-width: 1170px;
+  max-width: 1200px;
   min-width: 500px;
   height: auto;
   width: 100%;
@@ -574,7 +569,7 @@ h1:nth-of-type(2) {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* padding: 15rem 2rem; */
+  padding-top: 8.125rem;
   font-family: Poppins;
   max-width: 1200px;
   width: 100%;
@@ -587,7 +582,7 @@ h1:nth-of-type(2) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1170px;
+  max-width: 1200px;
   min-width: 500px;
   height: auto;
   background-color: #050505;
@@ -799,14 +794,18 @@ h1:nth-of-type(2) {
 .etapas-section{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  margin-top: 8.5rem;
   font-family: Poppins;
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
   color: #FFF;
   background-color: #151515;
+  border-radius: 15px;
 
 }
 
