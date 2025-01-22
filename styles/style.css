@@ -54,10 +54,7 @@ height: auto;
 display: flex;
 align-items: center;
 justify-content: center;
-
 }
-
-
 
 .dropdown-menu{
   position: absolute;
@@ -75,7 +72,6 @@ justify-content: center;
   color: #FFF;
   gap: 2rem;
   margin-top: 0.5rem;
-  
 }
 
 .dropdown:hover .dropdown-menu{
@@ -120,7 +116,6 @@ header nav#nav-esq ul#menu-principal li{
 list-style: none;
 font: 16px "Poppins";
 margin-right: 57px;
-
 }
 
 /* AJUSTES PRA ESPAÇAMENTO ENTRE OS BOTOES*/
@@ -138,7 +133,6 @@ text-decoration: none;
 font-size: 100%;
 padding-bottom: 10px;
 transition: color 0.3s ease;
-
 }
 
 /* Falta personalizar */
@@ -153,8 +147,7 @@ color: #0d0d0d;
 padding: 10px 15px;
 border-radius: 5px;
 text-align: center;
-font: bold 16px "Poppins";
-
+font: bold 16px "Poppins", "Sans-serif";
 }
 
 /* BOTÕES DO CABEÇALHO */
@@ -175,10 +168,6 @@ body {
 background-color: #0d0d0d;
 }
 
-
-
-
-
 /* MAIN */
 /* Estrutura do corpo do site */
 
@@ -187,7 +176,6 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 main .hero{
@@ -220,8 +208,6 @@ main .hero .content-hero{
   align-items: center;
   width: 600px;
   height: 870px;
-  font-family: inter;
-  font-weight: bold;
   font: bold 16px "Inter", "Sans-serif";
 }
 
@@ -229,10 +215,10 @@ main .hero .content-hero{
   display: flex;
   height: 259px;
   width: 458px;
-  
 }
 
 .content-text > h3{
+  font: 700 14px "Poppins", "Sans-serif";
   font-family: Poppins;
   font-weight: 700;
   font-size: 14px;
@@ -240,9 +226,7 @@ main .hero .content-hero{
 }
 
 .content-text > h1{
-  font-weight: 700;
-  font-size: 36px;
-  font-family: inter; 
+  font: 700 36px "Inter", "Sans-serif" 
 }
 .content-text > p{
   font-size: 16px;
@@ -255,9 +239,6 @@ main .hero .content-hero{
   flex-direction: row;
   justify-content: flex-start;
   gap: 30px;
-  /* width: 458px;
-  height: 43px; */
-  
 }
 
 .btn-faleconosco{
@@ -304,9 +285,7 @@ align-items: center;
   height: 43px;
   background: transparent;
   border: 3px solid #1B1B1B;
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 800;
+  font: 800 16px "Inter", "Sans-serif";
   color: #1B1B1B;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 } 
@@ -328,8 +307,7 @@ align-items: center;
   align-items: center;
   text-decoration: none;
   margin: 0 auto;
-  font-family: inter;
-  font-weight: 700;
+  font: 700 16px "Inter", "Sans-serif";
   color: #FFF;
   width: 100%;
   height: 100%;
@@ -381,8 +359,7 @@ align-items: center;
   align-items: center;
   text-decoration: none;
   color: #FFF;
-  font-family: Poppins, sans-serif;
-  font-weight: 600;
+  font: 600 18px "Poppins", "Sans-serif";
 }
 
 .button-cta:hover {
@@ -437,10 +414,8 @@ align-items: center;
 }
 
 .nossa-missao h3{
-  font-family: poppins;
-  font-size: 0.890rem;
+  font: 250 0.890rem "Poppins", "Sans-serif";
   max-width: 21.875rem;
-  font-weight: 250;
   margin-top: 0.3rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -450,18 +425,14 @@ align-items: center;
 
 .nossa-missao h1:first-of-type{
   color: #5DC560;
-  font-family: Poppins;
-  font-size: 6rem;
+  font: bold 6rem "Poppins", "Sans-serif";
   position: relative;
   right: 5.625rem;
- 
-
 }
 
 h1:nth-of-type(2) {
   color: #FFF;
-  font-family: Poppins;
-  font-size: 6rem;
+  font: bold 6rem "Poppins", "Sans-serif";
   position: relative;
   bottom: 4.0625rem;
   left: 1.875rem;
@@ -476,15 +447,12 @@ h1:nth-of-type(2) {
 }
 
 .simbolo{
-  font-size: 3rem;
-  font-family: roboto;
+  font: bold 3rem "Roboto", "Sans-serif";
   position: relative;
   bottom: 0.9375rem;
   left: 0.625rem;
   color: #5DC560;
-  
 }
-
 
 .light-bar-green{
   background-color: #5DC560;
@@ -498,13 +466,10 @@ h1:nth-of-type(2) {
   align-items: center;
   justify-content: flex-start;
   color: #FFF;
-  font-family: Roboto;
+  font: 200 1.25rem "Roboto", "Sans-serif";
   padding-left: 0.75rem;
-  font-size: 1.25rem;
-  font-weight: 200;
   width: 600px;
   height: 159px;
-
 }
 
 .text-valores{
@@ -516,14 +481,11 @@ h1:nth-of-type(2) {
 
 .text-valores > p{
   display: flex;
-
   align-items: center;
   text-align: end;
   color: #FFF;
-  font-family: Roboto;
+  font: 200 1.25rem "Roboto", "Sans-serif";
   padding-right: 0.75rem;
-  font-size: 1.25rem;
-  font-weight: 200;
   width: 600px;
   height: 159px;
 }
@@ -589,8 +551,6 @@ h1:nth-of-type(2) {
   width: 100%;
   border-radius: 10px;
   padding: 4.5rem 0;
-  
-  
 }
 
 .servicos-section > h1{
@@ -603,7 +563,6 @@ h1:nth-of-type(2) {
 
 
 .line-title-servicos{
-  
   width: 100%;
   width: 70px;
   height: 5px;
@@ -699,8 +658,7 @@ h1:nth-of-type(2) {
 .btn-cartoes  a{
   text-decoration: none;
   color: #FFF;
-  font-size: 16px;
-  font-weight: 600;
+  font: 600 16px "Poppins", "Sans-serif";
   width: 100%;
   height: 100%;
   display: flex;
@@ -713,9 +671,9 @@ h1:nth-of-type(2) {
   border: 2px solid #5DC560;
 }
 
-.backgroud-section{
+/* .backgroud-section{
   
-}
+} */
 
 
 /* BOX DIREITA */
@@ -724,13 +682,11 @@ h1:nth-of-type(2) {
   align-items: center;
   width: 600px;
   height: 870px;
-
 }
 
 .icon-atendimento{
   display: flex;
   margin-top: 300px;
-
 }
 
 .icon-atendimento-style{
@@ -749,12 +705,10 @@ h1:nth-of-type(2) {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-weight: bold;
-  white-space: nowrap;
   color: #FFF;
-  font-family: Poppins;
+  font: bold 13px "Poppins", "Sans-serif";
+  white-space: nowrap;
   margin: 10px 35px 0px;
-  font-size: 13px;
 }
 
 .line-atendimento-first{
@@ -786,11 +740,9 @@ h1:nth-of-type(2) {
 .grafico{
   display: flex;
   justify-content: center;
-
 }
 
 /* ETAPAS DE ATENDIMENTO */
-
 .etapas-section{
   display: flex;
   flex-direction: column;
@@ -806,7 +758,6 @@ h1:nth-of-type(2) {
   color: #FFF;
   background-color: #151515;
   border-radius: 15px;
-
 }
 
 .etapas-section > p{
@@ -899,12 +850,10 @@ h1:nth-of-type(2) {
   border: solid 2px #5DC560; 
   margin-top: 4rem;
   padding: 0.9rem 2rem; 
-  font-size: 16px; 
-  font-weight: 600; 
+  font: 600 16px "Poppins", "sans-serif";
   border-radius: 5px; 
   background-color: transparent; 
   color: #5DC560; 
-  font-family: Poppins, sans-serif; 
   cursor: pointer; 
 }
 
@@ -914,13 +863,7 @@ h1:nth-of-type(2) {
   color: #FFF;
 }
 
-
-
 /* FEEDBACK SECTION */
-
-
-
-
 .feedback-section{
   display: flex;
   flex-direction: column;
@@ -960,7 +903,6 @@ h1:nth-of-type(2) {
   justify-content: center;
   margin: 0 auto;
   align-items: flex-end;
-
 }
 
 .feedback-cartao{
@@ -974,7 +916,6 @@ h1:nth-of-type(2) {
   justify-content: space-between;
   border-bottom: 8px solid #5DC560;
   min-height: 380px;
-  
 }
 
 .feedback-cartao p{
@@ -982,7 +923,6 @@ h1:nth-of-type(2) {
   margin: auto 0;
   font-size: 1rem;
   line-height: 1.6;
-  
 }
 
 .feedback-footer {
@@ -994,7 +934,6 @@ h1:nth-of-type(2) {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  
 }
 
 .feedback-footer .circulo-feedback{
@@ -1009,9 +948,7 @@ h1:nth-of-type(2) {
   border-radius: 5px;
 }
 
-
 /* Footer */
-
 footer {
   background-color: #0C0C0C;
   max-width: 1200px;
@@ -1055,8 +992,6 @@ footer h3 {
 .footer-column-logo p{
   font-size: 0.8rem;
   opacity: 50%;
-
-  
 }
 
 .footer-column h3{
@@ -1135,11 +1070,8 @@ form button{
   margin-bottom: 15px;
 } 
 
-
 .footer-colum-submit{
   margin-top: 40px;
-
-
 }
 
 .footer-colum-submit h3{
@@ -1155,7 +1087,6 @@ form button{
   width: 400px;
   height: 60px;
   border-radius: 5px;
-  
 }
 
 .background-column-submit .form-style{
@@ -1169,7 +1100,6 @@ form button{
   background-color: transparent;
   border: none;
   cursor: pointer;
-
 }
 
 
